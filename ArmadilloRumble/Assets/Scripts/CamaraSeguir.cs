@@ -8,7 +8,7 @@ public class CamaraSeguir : MonoBehaviour
 
     public float altura = 1;
     public float distancia = 3;
-    public float angulo = 0;
+    public float angulo = -90;
     
     public float giro = 36f;
     
