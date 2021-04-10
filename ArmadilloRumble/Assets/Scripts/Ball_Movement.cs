@@ -7,6 +7,7 @@ public class Ball_Movement : MonoBehaviour
     // Public properties
     public float initialSpeed = 5.0f;
     public float acceleration = 10.0f;
+    public float bounceRatio = 1.5f;
 
     // Private properties
     private float speed;
@@ -14,6 +15,8 @@ public class Ball_Movement : MonoBehaviour
     private Vector3 direction;
 
     private Vector3 debugAngle;
+    private Vector3 collisionPoint;
+    private Vector3 collisionNormal;
 
     public Ball_Input ballInput;
 
@@ -59,5 +62,37 @@ public class Ball_Movement : MonoBehaviour
 
         speed = initialSpeed * ballDirection.magnitude;
         direction = new Vector3(debugAngle.x, 0.0f, debugAngle.z);
+    }
+
+    private void HardCollision(Vector3 normal)
+    {
+        int xNormal = 1;
+        int zNormal = 1;
+
+        if (normal.x < -0.5f || normal.x > 0.5f)
+        {
+            xNormal = -1;
+        }
+        if (normal.z < -0.5f || normal.z > 0.5f)
+        {
+            zNormal = -1;
+        }
+
+        direction = new Vector3(direction.x * xNormal, 0.0f, direction.z * zNormal);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            ContactPoint contact = collision.GetContact(0);
+            HardCollision(contact.normal);
+        }
+        if (collision.gameObject.CompareTag("Bouncer"))
+        {
+            ContactPoint contact = collision.GetContact(0);
+            HardCollision(contact.normal);
+            speed *= bounceRatio;
+        }
     }
 }
