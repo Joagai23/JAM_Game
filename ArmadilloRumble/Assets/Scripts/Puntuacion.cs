@@ -30,7 +30,6 @@ public class Puntuacion : MonoBehaviour
 
     }
 
-
     void Update()
     {
         if (timer <= 0)
@@ -46,6 +45,12 @@ public class Puntuacion : MonoBehaviour
 
         if (timer > 30){ timer = 30; }
     }
+
+    public int GetPoints()
+    {
+        return points;
+    }
+
     public void Puntos(int floors)
     {
             if (floors > 2)
