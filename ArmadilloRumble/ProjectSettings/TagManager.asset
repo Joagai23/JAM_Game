@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Wall
+  - Bouncer
   - Armadillo
   - Building
   - Third_floor
@@ -20,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Floor
   - 
   - 
   - 
