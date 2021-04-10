@@ -10,6 +10,7 @@ public class ShowPoints : MonoBehaviour
     void Start()
     {
         guiStyle.fontSize = 64;
+        guiStyle.font = (Font)Resources.Load("AldotheApache");
         guiStyle.alignment = TextAnchor.MiddleCenter;
     }
 
