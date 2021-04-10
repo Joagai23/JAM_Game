@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5036029255789059036}
   - component: {fileID: 5036029255789059043}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Building
   m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5036029255789059037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d35fce0e3b23dee4aa686f74c3aeb144, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f1a083dffc5b754083261b7e8593ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyDelay: 0.5
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 5036029256203388827}
   - component: {fileID: 5036029256203388824}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Segundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 5036029256381041193}
   - component: {fileID: 5036029256381041190}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Primero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 5036029256501608022}
   - component: {fileID: 5036029256501608023}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Tercero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 5036029256925185125}
   - component: {fileID: 5036029256925185122}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
