@@ -8,6 +8,7 @@ public class Ball_Movement : MonoBehaviour
     public float initialSpeed = 5.0f;
     public float acceleration = 10.0f;
     public float bounceRatio = 1.5f;
+    public float rotationSpeed = 5.0f;
 
     // Private properties
     private float speed;
@@ -15,10 +16,9 @@ public class Ball_Movement : MonoBehaviour
     private Vector3 direction;
 
     private Vector3 debugAngle;
-    private Vector3 collisionPoint;
-    private Vector3 collisionNormal;
 
     public Ball_Input ballInput;
+    public Rotator rotator;
 
     // Setter - Getter
     public float Speed
@@ -60,8 +60,10 @@ public class Ball_Movement : MonoBehaviour
         debugAngle = new Vector3(cameraDirection.x, 0.0f, cameraDirection.z);
         debugAngle = Quaternion.AngleAxis(-angle, Vector3.up) * debugAngle;
 
-        speed = initialSpeed * ballDirection.magnitude;
         direction = new Vector3(debugAngle.x, 0.0f, debugAngle.z);
+        speed = initialSpeed * ballDirection.magnitude;
+
+        rotator.Rotate(direction, speed);
     }
 
     private void HardCollision(Vector3 normal)
