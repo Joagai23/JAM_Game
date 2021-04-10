@@ -15,6 +15,8 @@ public class Puntuacion : MonoBehaviour
     private float comboW;
     private float comboH;
 
+    private GUIStyle guiStyle = new GUIStyle();
+
     void Start()
     {
         points = 0;
@@ -28,6 +30,7 @@ public class Puntuacion : MonoBehaviour
         comboH = 0.82f;
         comboW = 0.91f;
 
+        guiStyle.font = (Font)Resources.Load("AldotheApache");
     }
 
 
@@ -96,7 +99,7 @@ public class Puntuacion : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(0, 0, 100, 100), "<color=red>Punticos: " + points + "</color>");
+        GUI.Label(new Rect(10, 10, 100, 100), "<color=red>Score: " + points + "</color>", guiStyle);
 
         if (combo)
         {
@@ -108,8 +111,7 @@ public class Puntuacion : MonoBehaviour
                 comboW = 0.9f;
             };
             TextoCombo += "</color>";
-            GUI.Label(new Rect((float)(Screen.width * comboW), (float)(Screen.height * comboH), 100, 100), TextoCombo);
+            GUI.Label(new Rect((float)(Screen.width * comboW), (float)(Screen.height * comboH), 100, 100), TextoCombo, guiStyle);
         }
     }
-
 }
