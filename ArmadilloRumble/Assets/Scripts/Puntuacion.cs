@@ -23,6 +23,7 @@ public class Puntuacion : MonoBehaviour
         LowerPoints = 2000;
         UpperPoints = 500;
         LossPoints = 250;
+
     }
 
 
@@ -38,6 +39,8 @@ public class Puntuacion : MonoBehaviour
             timer -= Time.deltaTime;
             
         }
+
+        if (timer > 30){ timer = 30; }
     }
     public void Puntos(int floors)
     {
@@ -78,4 +81,10 @@ public class Puntuacion : MonoBehaviour
             }
         
     }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect( 0, 0, 100, 100), "<color=red>Punticos: "+ points+"</color>");
+    }
+
 }
