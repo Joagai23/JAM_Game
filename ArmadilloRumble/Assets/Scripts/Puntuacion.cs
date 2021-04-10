@@ -16,6 +16,8 @@ public class Puntuacion : MonoBehaviour
     private float comboH;
 
     private GUIStyle guiStyle = new GUIStyle();
+    private AudioClip lose_sound;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class Puntuacion : MonoBehaviour
         comboW = 0.91f;
 
         guiStyle.font = (Font)Resources.Load("AldotheApache");
+        lose_sound = ((AudioClip)Resources.Load("lose"));
     }
 
 
@@ -75,7 +78,6 @@ public class Puntuacion : MonoBehaviour
             {
                 points += (int)(LowerPoints * hitCombo * multiplier);
                 GetComponent<GameTimer>().timeLeft += 5;
-                Debug.Log("here");
                 timer += 10;
             }
             else
@@ -93,6 +95,7 @@ public class Puntuacion : MonoBehaviour
         {
             points -= LossPoints;
             timer -= 15;
+            audioSource.PlayOneShot(lose_sound);
         }
 
     }

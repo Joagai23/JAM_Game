@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -13,10 +14,19 @@ public class Building : MonoBehaviour
     int maxFloors = -1;
     int floors = -1;
 
+    private AudioClip[] bomb_sounds = new AudioClip[5];
+    private AudioClip[] blip_sounds = new AudioClip[5];
+    public AudioSource audioSource;
+
     void Start()
     {
         floors = transform.childCount;
         maxFloors = floors;
+        for (int i = 0; i < 5; i++)
+        {
+            bomb_sounds[i] = ((AudioClip)Resources.Load("bomba" + i));
+            blip_sounds[i] = ((AudioClip)Resources.Load("blip" + i));
+        }
     }
 
 
@@ -57,6 +67,8 @@ public class Building : MonoBehaviour
             GameObject _child1 = transform.GetChild(floors - 2).gameObject;
             StartCoroutine(DestroyLower(_child0, _child1));
         }
+        int sound_index = Random.Range(0, 5);
+        audioSource.PlayOneShot(blip_sounds[sound_index]);
         floors--;
     }
 
@@ -74,6 +86,8 @@ public class Building : MonoBehaviour
         _rend0.enabled = false;
         Renderer _rend1 = _child1.GetComponent<Renderer>();
         _rend1.enabled = true;
+        int sound_index = Random.Range(0, 5);
+        audioSource.PlayOneShot(bomb_sounds[sound_index]);
     }
 
     void ReBuildFloor()

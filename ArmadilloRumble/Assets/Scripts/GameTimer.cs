@@ -12,11 +12,14 @@ public class GameTimer : MonoBehaviour
     public float timeLeft = -1.0f;
 
     public Text timeUp;
-
+    private AudioClip lose_sound;
+    public AudioSource audioSource;
 
     void Start()
     {
+        DontDestroyOnLoad(audioSource);
         timeLeft = gameOverTime;
+        lose_sound = ((AudioClip)Resources.Load("gameover"));
     }
 
     void Update()
@@ -28,6 +31,7 @@ public class GameTimer : MonoBehaviour
             timeUp.text = timeLeft.ToString("F0");
             if (timeLeft <= 0)
             {
+                audioSource.PlayOneShot(lose_sound);
                 int points = this.GetComponent<Puntuacion>().GetPoints();
                 PlayerPrefs.SetString("Points", points.ToString());
                 SceneManager.LoadScene("EndMenu");
