@@ -3,33 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ComboTimer : MonoBehaviour
+public class GraphicGameTimer : MonoBehaviour
 {
-
-    public Puntuacion puntos;
+    
+    public GameTimer tiempo;
     public Image img;
     public float max;
     // Start is called before the first frame update
     void Start()
     {
         img = this.GetComponent<Image>();
-        max = 30f;
+        max = 60f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (puntos.combo)
-        {
-            this.GetComponent<Image>().enabled=true;
-           if (puntos.timer > 0)
+            if (tiempo.timeLeft > 0)
             {
-                img.fillAmount = puntos.timer / max;
+                img.fillAmount = tiempo.timeLeft / max;
             }
-        }
-        else
-        {
-            this.GetComponent<Image>().enabled = false;
-         }
     }
 }

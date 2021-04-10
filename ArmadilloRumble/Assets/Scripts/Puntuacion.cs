@@ -12,6 +12,8 @@ public class Puntuacion : MonoBehaviour
     public int UpperPoints;
     public int LowerPoints;
     public int LossPoints;
+    private float comboW;
+    private float comboH;
 
     void Start()
     {
@@ -23,6 +25,9 @@ public class Puntuacion : MonoBehaviour
         LowerPoints = 2000;
         UpperPoints = 500;
         LossPoints = 250;
+        comboH = 0.82f;
+        comboW = 0.91f;
+
     }
 
 
@@ -36,46 +41,75 @@ public class Puntuacion : MonoBehaviour
         else
         {
             timer -= Time.deltaTime;
-            
+
         }
+
+        if (timer > 30) { timer = 30; }
     }
+
+    public int GetPoints()
+    {
+        return points;
+    }
+
     public void Puntos(int floors)
     {
-            if (floors > 2)
+        if (floors > 2)
+        {
+            if (combo)
             {
-                if (combo) {
-                    points +=  (int) (UpperPoints * hitCombo * multiplier);
-                }
-                else{
-                    points += UpperPoints;
-                }
-            }else if (floors == 2)
+                points += (int)(UpperPoints * hitCombo * multiplier);
+            }
+            else
             {
-
-                if (combo)
-                {
-                    points += (int)(LowerPoints * hitCombo * multiplier);
-                }
-                else
-                {
-                    points += LowerPoints;
-                }
-                hitCombo++;
+                points += UpperPoints;
+            }
+        }
+        else if (floors == 2)
+        {
+            hitCombo++;
+            if (combo)
+            {
+                points += (int)(LowerPoints * hitCombo * multiplier);
+                GetComponent<GameTimer>().timeLeft += 5;
+                Debug.Log("here");
+                timer += 10;
+            }
+            else
+            {
+                points += LowerPoints;
                 if (hitCombo == 1)
                 {
+                    comboW = 0.91f;
                     timer = 30;
                     combo = true;
                 }
-                else
-                {
-                    timer += 10;
-                }
             }
-            else if (floors==1)
-            {
-                points -= LossPoints;
-                timer -= 15;
-            }
-        
+        }
+        else if (floors == 1)
+        {
+            points -= LossPoints;
+            timer -= 15;
+        }
+
     }
+
+    void OnGUI()
+    {
+        GUI.Label(new Rect(0, 0, 100, 100), "<color=red>Punticos: " + points + "</color>");
+
+        if (combo)
+        {
+
+            string TextoCombo = "<color=red>Combo!";
+            if (hitCombo >= 2)
+            {
+                TextoCombo += "X" + hitCombo.ToString();
+                comboW = 0.9f;
+            };
+            TextoCombo += "</color>";
+            GUI.Label(new Rect((float)(Screen.width * comboW), (float)(Screen.height * comboH), 100, 100), TextoCombo);
+        }
+    }
+
 }
