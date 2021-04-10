@@ -15,6 +15,7 @@ public class BuildingCollider : MonoBehaviour
         {
             _building = collision.gameObject.GetComponent<Building>();
             int _floors = _building.GetFloors();
+            this.GetComponent<Puntuacion>().Puntos(_floors);
             _building.DestroyFloor();
         } 
     }
