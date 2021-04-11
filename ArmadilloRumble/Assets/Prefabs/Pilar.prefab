@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2312303192867897999}
+  - component: {fileID: 6944664577343136646}
   m_Layer: 0
   m_Name: Torre (2)
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 5854190804131524486}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6944664577343136646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114678922029141627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3699989, y: 3.79, z: 1.3905535}
+  m_Center: {x: 0, y: 0.52, z: -0.010277271}
 --- !u!1 &979478214411235232
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,9 +56,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 912636113054162517}
+  - component: {fileID: 8727798020839054177}
   m_Layer: 0
   m_Name: Torre (3)
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,6 +81,19 @@ Transform:
   m_Father: {fileID: 5854190804131524486}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8727798020839054177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979478214411235232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3699989, y: 3.79, z: 1.3905535}
+  m_Center: {x: 0, y: 0.52, z: -0.010277271}
 --- !u!1 &2166486410583432218
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,9 +103,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4023319273595332749}
+  - component: {fileID: 904842947971490647}
   m_Layer: 0
   m_Name: Torre (1)
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +128,19 @@ Transform:
   m_Father: {fileID: 5854190804131524486}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &904842947971490647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166486410583432218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3699989, y: 3.79, z: 1.3905535}
+  m_Center: {x: 0, y: 0.52, z: -0.010277271}
 --- !u!1 &4720350618957489903
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,9 +150,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4738063061618527969}
+  - component: {fileID: 5042865434038609463}
   m_Layer: 0
   m_Name: Torre
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +175,19 @@ Transform:
   m_Father: {fileID: 5854190804131524486}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5042865434038609463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4720350618957489903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3699989, y: 3.79, z: 1.3905535}
+  m_Center: {x: 0, y: 0.52, z: -0.010277271}
 --- !u!1 &5502923253019784044
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,9 +197,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5854190804131524486}
+  - component: {fileID: 3255980367383614782}
   m_Layer: 0
   m_Name: Pilar
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,6 +226,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3255980367383614782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5502923253019784044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.843873, y: 2.34, z: 8.173857}
+  m_Center: {x: -0.010278225, y: 0.21, z: 0.010277748}
 --- !u!1001 &171143383637798427
 PrefabInstance:
   m_ObjectHideFlags: 0
