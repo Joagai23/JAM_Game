@@ -29,9 +29,9 @@ public class Puntuacion : MonoBehaviour
         combo = false;
         timer = 0f;
         multiplier = 1.5f;
-        LowerPoints = 2000;
-        UpperPoints = 500;
-        LossPoints = 250;
+        LowerPoints = 200;
+        UpperPoints = 50;
+        LossPoints = 25;
         comboH = 0.82f;
         comboW = 0.91f;
 
