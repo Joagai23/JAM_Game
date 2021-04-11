@@ -93,8 +93,7 @@ public class Building : MonoBehaviour
     private IEnumerator DestroyUpper(GameObject _child)
     {
         yield return new WaitForSeconds(DestroyDelay);
-        Renderer _rend = _child.GetComponent<Renderer>();
-        _rend.enabled = false;
+        setRenderer(_child, false);
     }
 
     private IEnumerator DestroyLower(GameObject _child0, GameObject _child1)
@@ -130,12 +129,9 @@ public class Building : MonoBehaviour
         {
             _rend.enabled = mode;
         } 
-        else
+        for (int i = 0; i < _child.transform.childCount; i++)
         {
-            for (int i = 0; i < _child.transform.childCount; i++)
-            {
-                setRenderer(_child.transform.GetChild(i).gameObject, mode);
-            }
+            setRenderer(_child.transform.GetChild(i).gameObject, mode);
         }
     }
 
