@@ -97,8 +97,11 @@ GameObject:
   - component: {fileID: 407170109297438269}
   - component: {fileID: 407170109297438209}
   - component: {fileID: 407170109297438214}
+  - component: {fileID: 3063809349742026329}
+  - component: {fileID: 6809307173839275775}
+  - component: {fileID: -819217942643853208}
   m_Layer: 0
-  m_Name: SphereGameobject
+  m_Name: Armadillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +114,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407170109297438268}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.54, y: 0.95, z: -3.96}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -214,6 +217,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &3063809349742026329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407170109297438268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546400b6d1cd7284a8b6fc0e7cefd86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6809307173839275775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407170109297438268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62570c256b3f9d14e8637913ff854fe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  hitCombo: 0
+  combo: 0
+  multiplier: 0
+  timer: 0
+  UpperPoints: 0
+  LowerPoints: 0
+  LossPoints: 0
+  audioSource: {fileID: 0}
+--- !u!114 &-819217942643853208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407170109297438268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c701bea1648404d92f0812b942129a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverTime: 60
+  timeLeft: -1
+  timeUp: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &407170110550742662
 GameObject:
   m_ObjectHideFlags: 0

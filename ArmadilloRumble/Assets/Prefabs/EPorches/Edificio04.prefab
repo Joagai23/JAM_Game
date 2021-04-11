@@ -683,8 +683,10 @@ GameObject:
   - component: {fileID: 5097564272153647995}
   - component: {fileID: 5558361604221798152}
   - component: {fileID: 5709407764830967171}
+  - component: {fileID: 5135919673190871324}
+  - component: {fileID: 5363331925010355566}
   m_Layer: 0
-  m_Name: EdificioVentanas
+  m_Name: Edificio04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -768,6 +770,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &5135919673190871324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354257957554409847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1a083dffc5b754083261b7e8593ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyDelay: 0.5
+  TimeToBuild: 30
+  audioSource: {fileID: 0}
+--- !u!54 &5363331925010355566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354257957554409847}
+  serializedVersion: 2
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3638414336721719192
 GameObject:
   m_ObjectHideFlags: 0
