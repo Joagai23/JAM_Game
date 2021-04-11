@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 8005666318156274935}
   - component: {fileID: 4191321453847337939}
   - component: {fileID: 3029804476078577974}
+  - component: {fileID: 6116913125192995209}
   m_Layer: 0
   m_Name: Edificio03
   m_TagString: Building
@@ -520,6 +521,22 @@ MonoBehaviour:
   DestroyDelay: 0.5
   TimeToBuild: 30
   audioSource: {fileID: 0}
+--- !u!54 &6116913125192995209
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519569120404333144}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &6261387683847320265
 GameObject:
   m_ObjectHideFlags: 0
