@@ -48,8 +48,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3, z: 1}
-  m_Center: {x: 0, y: 1.8, z: -0.2}
+  m_Size: {x: 1.1180494, y: 3, z: 1.0899422}
+  m_Center: {x: -0.008432031, y: 1.8, z: -0.2056213}
 --- !u!114 &-5238089720334209984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyDelay: 0.5
+  GracePeriod: 0.5
   TimeToBuild: 30
   audioSource: {fileID: 0}
 --- !u!54 &-4350517128069228032
