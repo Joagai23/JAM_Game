@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyDelay: 0.5
   TimeToBuild: 30
+  audioSource: {fileID: 0}
 --- !u!1 &5036029256203388822
 GameObject:
   m_ObjectHideFlags: 0
