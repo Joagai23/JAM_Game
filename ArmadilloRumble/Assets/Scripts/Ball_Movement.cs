@@ -85,7 +85,7 @@ public class Ball_Movement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Building"))
         {
             ContactPoint contact = collision.GetContact(0);
             HardCollision(contact.normal);

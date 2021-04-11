@@ -1525,7 +1525,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 37.2938, y: 1, z: 28.297352}
-  m_Center: {x: -0.4167366, y: -0.28, z: 0.04265213}
+  m_Center: {x: -0.4167366, y: -0.43, z: 0.04265213}
 --- !u!1001 &173770274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2398,6 +2398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parada
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54f45fc4a48e3e14486dad128d5c15fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54f45fc4a48e3e14486dad128d5c15fb, type: 3}
 --- !u!4 &258018017 stripped
@@ -2632,6 +2637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Contenedor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b4ef5114646c4a4ea6d24b957082ea7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4ef5114646c4a4ea6d24b957082ea7, type: 3}
@@ -2928,12 +2938,12 @@ PrefabInstance:
     - target: {fileID: 3935195911995097367, guid: 7e01633fd7ac71f4ba45558c9d321f5e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.005
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: 3935195911995097367, guid: 7e01633fd7ac71f4ba45558c9d321f5e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.007
+      value: -9.977
       objectReference: {fileID: 0}
     - target: {fileID: 3935195911995097367, guid: 7e01633fd7ac71f4ba45558c9d321f5e,
         type: 3}
@@ -3808,7 +3818,7 @@ PrefabInstance:
     - target: {fileID: 407170109297438208, guid: 04b143425c7846948a4ed60d2f846578,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41412377
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 407170109297438208, guid: 04b143425c7846948a4ed60d2f846578,
         type: 3}
@@ -3818,7 +3828,7 @@ PrefabInstance:
     - target: {fileID: 407170109297438208, guid: 04b143425c7846948a4ed60d2f846578,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.997505
+      value: -11.85
       objectReference: {fileID: 0}
     - target: {fileID: 407170109297438208, guid: 04b143425c7846948a4ed60d2f846578,
         type: 3}
@@ -3943,6 +3953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Contenedor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0b4ef5114646c4a4ea6d24b957082ea7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4ef5114646c4a4ea6d24b957082ea7, type: 3}
@@ -4263,8 +4278,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2Pisos1 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -5553069760731219385, guid: e4172b9d307fec6499ef4ec4937adf18, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4172b9d307fec6499ef4ec4937adf18, type: 3}
 --- !u!4 &527848812 stripped
 Transform:
@@ -8441,6 +8455,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parada (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 54f45fc4a48e3e14486dad128d5c15fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54f45fc4a48e3e14486dad128d5c15fb, type: 3}
 --- !u!4 &1024862388 stripped
@@ -10719,6 +10738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EstatuaJusticia
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 92400ef7226fb9f439323cc0acfeac0e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92400ef7226fb9f439323cc0acfeac0e, type: 3}
 --- !u!4 &1287471952 stripped
@@ -10958,6 +10982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Estatua
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccae56fbb9e480f4c882863b835c17fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bouncer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccae56fbb9e480f4c882863b835c17fd, type: 3}
@@ -17352,30 +17381,13 @@ GameObject:
   - component: {fileID: 3489940362423415391}
   - component: {fileID: 7304141481693115771}
   - component: {fileID: 1436199146324380914}
-  - component: {fileID: 1436199146324380913}
   m_Layer: 0
   m_Name: EdificioOficinas (1)
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1436199146324380913
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436199146324380912}
-  serializedVersion: 2
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1436199146324380914
 MonoBehaviour:
   m_ObjectHideFlags: 0
