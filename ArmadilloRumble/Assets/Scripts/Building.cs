@@ -107,7 +107,10 @@ public class Building : MonoBehaviour
 
     void ReBuildFloor()
     {
-        Assert.AreNotEqual(maxFloors, floors);
+
+        if (floors == maxFloors)
+            return;
+
         if (floors >= 1) 
         {
             GameObject _child = transform.GetChild(floor_offset + floors).gameObject;
