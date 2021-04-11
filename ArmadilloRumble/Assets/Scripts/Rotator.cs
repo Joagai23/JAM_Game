@@ -31,8 +31,6 @@ public class Rotator : MonoBehaviour
         XAxisRotation(time);
 
         armadillo.transform.Rotate(0.0f, -xRotation * rotationSpeed, 0.0f, Space.Self);
-
-        Debug.Log("Target: " + xTargetRotation + " - Current: " + xRotation);
     }
 
     private void XAxisRotation(float time)
