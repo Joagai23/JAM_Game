@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Puntuacion : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Puntuacion : MonoBehaviour
     public int LossPoints;
     private float comboW;
     private float comboH;
+    public Text puntos;
+    public Text comboGraphic;
 
     private GUIStyle guiStyle = new GUIStyle();
     private AudioClip lose_sound;
@@ -102,7 +105,8 @@ public class Puntuacion : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 100), "<color=red>Score: " + points + "</color>", guiStyle);
+        //GUI.Label(new Rect(10, 10, 100, 100), "<color=red>Score: " + points + "</color>", guiStyle);
+        puntos.text = "<color=red> Score: " + points + " </color>";
 
         if (combo)
         {
@@ -114,7 +118,13 @@ public class Puntuacion : MonoBehaviour
                 comboW = 0.9f;
             };
             TextoCombo += "</color>";
-            GUI.Label(new Rect((float)(Screen.width * comboW), (float)(Screen.height * comboH), 100, 100), TextoCombo, guiStyle);
+            //     GUI.Label(new Rect((float)(Screen.width * comboW), (float)(Screen.height * comboH), 100, 100), TextoCombo, guiStyle);
+            comboGraphic.text = TextoCombo;
+            comboGraphic.enabled = true;
+        }
+        else
+        {
+            comboGraphic.enabled = false;
         }
     }
 }
